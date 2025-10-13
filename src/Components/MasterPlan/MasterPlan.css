@@ -61,7 +61,7 @@
 /* Clean, minimal dropdown */
 .masterplan-dropdown {
   width: 100%;
-  padding: 1.1rem 3rem 1.1rem 1.2rem; /* room for arrow */
+  padding: 1.1rem 3rem 1.1rem 1.2rem;
   font-size: 1.4rem;
   font-weight: 400;
   color: #222;
@@ -72,7 +72,7 @@
   cursor: pointer;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  appearance: none; /* hides default arrow */
+  appearance: none;
 }
 
 /* Custom dropdown arrow */
@@ -111,22 +111,118 @@
   max-width: 500px;
 }
 
-/* Responsive design */
-@media (max-width: 900px) {
+/* 🌐 Responsive Design */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+  .masterplan-section {
+    padding: 5rem 3rem;
+  }
+
   .masterplan-container {
-    flex-direction: column-reverse;
-    text-align: center;
+    gap: 3rem;
+  }
+
+  .masterplan-heading {
+    font-size: 2rem;
+  }
+
+  .masterplan-dropdown {
+    font-size: 1.2rem;
+  }
+
+  .masterplan-description {
+    font-size: 1rem;
   }
 
   .masterplan-left {
     padding-left: 0;
+  }
+}
+
+/* Large Mobile & Small Tablets (<= 768px) */
+@media (max-width: 768px) {
+  .masterplan-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .masterplan-section {
+    padding: 4rem 2rem;
+  }
+
+  .masterplan-left img {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .masterplan-heading {
     font-size: 1.8rem;
   }
 
+  .masterplan-dropdown {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem 1rem 1rem;
+  }
+
+  .masterplan-description {
+    font-size: 0.95rem;
+  }
+
   .dropdown-container {
     max-width: 100%;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .masterplan-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .masterplan-heading {
+    font-size: 1.5rem;
+  }
+
+  .masterplan-dropdown {
+    font-size: 1rem;
+    padding: 0.9rem 2rem 0.9rem 0.9rem;
+  }
+
+  .masterplan-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .dropdown-icon {
+    font-size: 1rem;
+    right: 1rem;
+  }
+
+  .masterplan-left img {
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+}
+
+/* Extra Small Screens (<= 360px) */
+@media (max-width: 360px) {
+  .masterplan-section {
+    padding: 3rem 0.8rem;
+  }
+
+  .masterplan-heading {
+    font-size: 1.3rem;
+  }
+
+  .masterplan-description {
+    font-size: 0.85rem;
+  }
+
+  .masterplan-dropdown {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem 0.8rem 0.8rem;
   }
 }

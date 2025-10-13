@@ -28,7 +28,7 @@
 }
 
 .location-heading {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   font-style: italic;
   margin: 1rem 0;
@@ -38,7 +38,8 @@
 .location-description {
   font-size: 1.1rem;
   color: #555;
-  line-height: 1.6;
+  line-height: 1.7;
+  max-width: 600px;
 }
 
 /* Right map */
@@ -58,20 +59,93 @@
   border-radius: 1rem;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* 🌐 Responsive Breakpoints */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+  .location-section {
+    padding: 5rem 1.5rem;
+  }
+
+  .location-heading {
+    font-size: 2rem;
+  }
+
+  .location-description {
+    font-size: 1rem;
+  }
+
+  .location-right {
+    height: 350px;
+  }
+}
+
+/* Large mobile & small tablets (<= 768px) */
+@media (max-width: 768px) {
   .location-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2.5rem;
+  }
+
+  .location-left {
+    order: 1;
   }
 
   .location-right {
+    order: 2;
     width: 100%;
-    height: 350px;
+    height: 320px;
   }
 
   .location-heading {
     font-size: 1.8rem;
   }
+
+  .location-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }
+
+/* Small mobile (<= 480px) */
+@media (max-width: 480px) {
+  .location-section {
+    padding: 4rem 1rem;
+  }
+
+  .location-subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .location-heading {
+    font-size: 1.5rem;
+  }
+
+  .location-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .location-right {
+    height: 280px;
+  }
+}
+
+/* Extra small (<= 360px) */
+@media (max-width: 360px) {
+  .location-heading {
+    font-size: 1.3rem;
+  }
+
+  .location-description {
+    font-size: 0.85rem;
+  }
+
+  .location-right {
+    height: 250px;
+  }
+}
+
