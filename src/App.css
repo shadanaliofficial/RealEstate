@@ -1,0 +1,9 @@
+/* App.css */
+
+.app-container {
+  min-height: 100vh;
+  background-color: #f5f3e0; /* 👈 your global background color */
+  color: #111;              /* base text color */
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}

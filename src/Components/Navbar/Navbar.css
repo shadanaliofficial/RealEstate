@@ -1,0 +1,164 @@
+/* Navbar base */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.35s ease;
+  z-index: 1000;
+  background: transparent;
+  color: white;
+}
+
+/* Logo */
+.logo img {
+  height: 100px;
+  transition: height 0.35s ease;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* Right side */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.visit-btn {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 1rem 3.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  font-size: large;
+  font-weight: 600;
+}
+
+.visit-btn:hover {
+  background: rgba(8, 51, 8, 0.845);
+  color: #ffffff;
+}
+
+.menu-toggle {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  transition: font-size 0.35s ease;
+  display: none; /* hidden on desktop */
+}
+
+/* When scrolled */
+.navbar.scrolled {
+  background: #faf3e0;
+  color: black;
+  padding: 0rem 3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .logo img {
+  height: 90px;
+  padding: 0.25rem 1rem;
+}
+
+.navbar.scrolled .visit-btn {
+  background: rgba(8, 51, 8, 0.845);
+  color: white;
+  padding: 0.5rem 3rem;
+}
+
+.navbar.scrolled .menu-toggle {
+  font-size: 2rem;
+  color: black;
+}
+
+/* 🌐 Responsive Section */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  .nav-right {
+    gap: 2rem;
+  }
+
+  .visit-btn {
+    padding: 0.8rem 2rem;
+    font-size: medium;
+  }
+
+  .logo img {
+    height: 85px;
+  }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(8, 51, 8, 0.97);
+    gap: 2rem;
+    padding: 2rem 0;
+    transition: all 0.35s ease;
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* When menu is open (add "active" class in JS) */
+  .nav-right.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .visit-btn {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .navbar.scrolled .menu-toggle {
+    color: black;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .logo img {
+    height: 70px;
+  }
+
+  .visit-btn {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .menu-toggle {
+    font-size: 2rem;
+  }
+}

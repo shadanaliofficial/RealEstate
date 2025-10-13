@@ -1,0 +1,99 @@
+.visit-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 8%;
+  min-height: 80vh;
+  background: var(--base-100); /* matches your global theme */
+}
+
+/* LEFT SIDE */
+.visit-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.visit-title {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: green;
+}
+
+/* RIGHT SIDE */
+.visit-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.visit-form {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 8px;
+  outline: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #777;
+  font-weight: 400;
+}
+
+.form-group input:focus {
+  border-color: #1b5e20;
+  box-shadow: 0 0 0 2px rgba(27, 94, 32, 0.1);
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  background: #1b5e20;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #2e7d32;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .visit-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .visit-left {
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .visit-right {
+    justify-content: center;
+  }
+
+  .visit-title {
+    font-size: 2.6rem;
+  }
+}

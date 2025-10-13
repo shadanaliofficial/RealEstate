@@ -1,0 +1,132 @@
+.masterplan-section {
+  width: 100%;
+  padding: 6rem 5rem;
+  background: #faf3e0ad;
+  color: #111;
+}
+
+.masterplan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* Left side image */
+.masterplan-left {
+  flex: 1;
+  min-width: 350px;
+  padding-left: 3rem;
+}
+
+.masterplan-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.masterplan-left img:hover {
+  transform: scale(1.02);
+}
+
+/* Right side content */
+.masterplan-right {
+  flex: 1;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.masterplan-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0b6623;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+/* Clean, minimal dropdown */
+.masterplan-dropdown {
+  width: 100%;
+  padding: 1.1rem 3rem 1.1rem 1.2rem; /* room for arrow */
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 0.75rem;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  appearance: none; /* hides default arrow */
+}
+
+/* Custom dropdown arrow */
+.dropdown-icon {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: #555;
+  pointer-events: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover + focus states */
+.masterplan-dropdown:hover {
+  border-color: #888;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.masterplan-dropdown:focus {
+  border-color: #0b6623;
+  box-shadow: 0 0 0 4px rgba(11, 102, 35, 0.15);
+}
+
+/* Rotate arrow on focus */
+.dropdown-container:has(.masterplan-dropdown:focus) .dropdown-icon {
+  transform: translateY(-50%) rotate(180deg);
+  color: #0b6623;
+}
+
+.masterplan-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .masterplan-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .masterplan-left {
+    padding-left: 0;
+  }
+
+  .masterplan-heading {
+    font-size: 1.8rem;
+  }
+
+  .dropdown-container {
+    max-width: 100%;
+  }
+}

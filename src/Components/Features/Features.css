@@ -1,0 +1,135 @@
+.features-section {
+  width: 100%;
+  color: #111;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: rgba(8, 51, 8, 0.845);
+}
+
+.features-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 4rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Features Row */
+.features-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-top: 1px solid transparent;
+  gap: 1rem;
+}
+
+.feature-item {
+  flex: 1;
+  text-align: center;
+}
+
+.feature-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover img {
+  transform: translateY(-4px);
+}
+
+
+.feature-item p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(8, 51, 8, 0.845);
+}
+
+/* Divider line between items */
+.divider {
+  width: 1px;
+  height: 90px;
+  background: #ccc;
+}
+
+/* Download Button */
+.features-btn-container {
+  margin-top: 4rem;
+}
+
+.download-btn {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  color: white;
+  background-color: #a99e83;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 2.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  z-index: 0;
+  transition: color 0.3s ease;
+}
+
+/* The fill effect */
+.download-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(8, 51, 8, 0.845); /* darker green for fill */
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.download-btn:hover::before {
+  width: 100%; /* fill from left to right */
+}
+
+/* Optional slight 3D effect */
+.download-btn:active {
+  transform: scale(0.98);
+}
+
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .features-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .feature-item {
+    flex: 0 1 calc(33.33% - 1rem);
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-item {
+    flex: 0 1 calc(50% - 1rem);
+  }
+}

@@ -1,0 +1,60 @@
+/* Hero container */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Marquee container */
+.hero-marquee {
+  width: 100%;
+  margin-top: 0.25rem;
+  background: rgba(8, 51, 8, 0.845);
+  color: white;
+  overflow: hidden;
+  position: relative;
+  height: 4rem; /* fixed height for clean scroll */
+  display: flex;
+  align-items: center;
+}
+
+/* Animated text */
+.hero-marquee span {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: absolute;
+  animation: marquee 15s linear infinite;
+}
+
+/* Keyframes for single text scroll */
+@keyframes marquee {
+  0% {
+    left: 100%; /* start outside right */
+  }
+  100% {
+    left: -40%; /* move fully to the left */
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-marquee span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-marquee span {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,144 @@
+.footer {
+  background: #1a1a1a;
+  color: #f2f2f2;
+  padding: 4rem 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left h3 {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-left h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-left p {
+  line-height: 1.6;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+/* MIDDLE SIDE */
+.footer-middle {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-middle h3 {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-middle p {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* RIGHT SIDE */
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-right h3 {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #bdbdbd;
+  border: 1px solid #bdbdbd;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  color: white;
+  background: #2e7d32; /* your brand green fill */
+  border-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+/* SCROLL TO TOP */
+.scroll-top {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow-icon {
+  font-size: 1.8rem;
+  color: #bdbdbd;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+  padding: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+.arrow-icon:hover {
+  background: #2e7d32;
+  border-color: #2e7d32;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    flex: unset;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .scroll-top {
+    bottom: 1.5rem;
+  }
+}
