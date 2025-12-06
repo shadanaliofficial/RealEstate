@@ -4,7 +4,6 @@ import "./Characteristics.css";
 export default function Characteristics() {
   const navigate = useNavigate();
 
-  // These are your images (place them in the public folder)
   const features = [
     { id: 1, img: "/c1.webp", title: "Modern Architecture" },
     { id: 2, img: "/c2.webp", title: "Spacious Interiors" },

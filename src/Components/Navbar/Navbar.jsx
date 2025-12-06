@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      {/* Logo image */}
+
       <div className="logo">
         <img src="/logo.png" alt="RealEstate Logo" />
       </div>

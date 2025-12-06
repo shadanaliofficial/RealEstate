@@ -21,12 +21,10 @@ export default function ScheduleVisit() {
 
   return (
     <section className="visit-section">
-      {/* LEFT SIDE */}
       <div className="visit-left">
         <h2 className="visit-title">Schedule a Visit</h2>
       </div>
 
-      {/* RIGHT SIDE */}
       <div className="visit-right">
         <form className="visit-form" onSubmit={handleSubmit}>
           <div className="form-group">

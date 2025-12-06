@@ -17,7 +17,7 @@ export default function MasterPlan() {
   return (
     <section className="masterplan-section" id="masterplan">
       <div className="masterplan-container">
-        {/* Left side image */}
+
         <div className="masterplan-left">
           <img
             src={getImageSrc()}
@@ -29,11 +29,9 @@ export default function MasterPlan() {
           />
         </div>
 
-        {/* Right side content */}
         <div className="masterplan-right">
           <h1 className="masterplan-heading">MASTER PLANS</h1>
 
-          {/* Dropdown with arrow */}
           <div className="dropdown-container">
             <select
               className="masterplan-dropdown"

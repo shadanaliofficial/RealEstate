@@ -9,7 +9,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        {/* LEFT SIDE */}
         <div className="footer-left">
           <h3>Project By</h3>
           <h1>SANGAM REAL ESTATE</h1>
@@ -21,7 +20,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* MIDDLE SIDE */}
         <div className="footer-middle">
           <h3>Project Address</h3>
           <p>Plot No. 17, Green Enclave, Baner, Pune – 411045</p>
@@ -33,7 +31,6 @@ export default function Footer() {
           <p>Sangam Towers, 5th Floor, Koregaon Park, Pune – 411001</p>
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="footer-right">
           <h3>Follow Us</h3>
           <div className="social-icons">
@@ -57,7 +54,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* SCROLL TO TOP */}
       <div className="scroll-top" onClick={scrollToTop}>
         <FaArrowUp className="arrow-icon" />
       </div>

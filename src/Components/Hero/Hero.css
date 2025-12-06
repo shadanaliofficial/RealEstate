@@ -1,4 +1,3 @@
-/* Hero container */
 .hero {
   position: relative;
   width: 100%;
@@ -13,7 +12,6 @@
   display: block;
 }
 
-/* Marquee container */
 .hero-marquee {
   width: 100%;
   margin-top: 0.25rem;
@@ -21,12 +19,11 @@
   color: white;
   overflow: hidden;
   position: relative;
-  height: 4rem; /* fixed height for clean scroll */
+  height: 4rem;
   display: flex;
   align-items: center;
 }
 
-/* Animated text */
 .hero-marquee span {
   display: inline-block;
   white-space: nowrap;
@@ -36,17 +33,15 @@
   animation: marquee 15s linear infinite;
 }
 
-/* Keyframes for single text scroll */
 @keyframes marquee {
   0% {
-    left: 100%; /* start outside right */
+    left: 100%;
   }
   100% {
-    left: -40%; /* move fully to the left */
+    left: -40%;
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero-marquee span {
     font-size: 1rem;

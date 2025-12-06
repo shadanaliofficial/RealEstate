@@ -4,10 +4,9 @@
   width: 100%;
 }
 
-/* LEFT SIDE */
 .floorplans-left {
   flex: 1.7;
-  background: #1b5e20; /* dark rich green */
+  background: #1b5e20;
   color: white;
   display: flex;
   flex-direction: column;
@@ -54,17 +53,15 @@
   transition: all 0.3s ease;
 }
 
-/* Highlight for active tower */
 .tower-item.active .tower-name {
   color: #f5eec0;
   font-weight: 600;
   letter-spacing: 3px;
 }
 
-/* RIGHT SIDE */
 .floorplans-right {
   flex: 2;
-  background: var(--base-100); /* default background color */
+  background: var(--base-100);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +93,6 @@
   }
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .floorplans-section {
     flex-direction: column;

@@ -49,7 +49,6 @@ export default function Features() {
           </div>
         </div>
 
-        {/* Download button */}
         <div className="features-btn-container">
           <button className="download-btn">Download E-Brochure</button>
         </div>

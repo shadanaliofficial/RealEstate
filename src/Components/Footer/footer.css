@@ -14,7 +14,6 @@
   flex-wrap: wrap;
 }
 
-/* LEFT SIDE */
 .footer-left {
   flex: 1;
   min-width: 250px;
@@ -40,7 +39,6 @@
   font-size: 0.95rem;
 }
 
-/* MIDDLE SIDE */
 .footer-middle {
   flex: 1;
   min-width: 250px;
@@ -60,7 +58,6 @@
   line-height: 1.5;
 }
 
-/* RIGHT SIDE */
 .footer-right {
   flex: 1;
   min-width: 200px;
@@ -89,12 +86,11 @@
 
 .icon:hover {
   color: white;
-  background: #2e7d32; /* your brand green fill */
+  background: #2e7d32;
   border-color: #2e7d32;
   transform: scale(1.05);
 }
 
-/* SCROLL TO TOP */
 .scroll-top {
   position: absolute;
   bottom: 2rem;
@@ -120,7 +116,6 @@
   transform: translateY(-3px);
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .footer-content {
     flex-direction: column;

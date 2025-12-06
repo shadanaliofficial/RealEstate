@@ -28,7 +28,6 @@
   margin-right: auto;
 }
 
-/* Grid layout */
 .characteristics-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -36,7 +35,6 @@
   justify-items: center;
 }
 
-/* Each card */
 .character-card {
   position: relative;
   width: 100%;
@@ -60,7 +58,7 @@
   transform: scale(1.05);
 }
 
-/* Overlay text */
+
 .card-overlay {
   position: absolute;
   bottom: 0;
@@ -78,7 +76,7 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* Responsive */
+
 @media (max-width: 1024px) {
   .characteristics-grid {
     grid-template-columns: repeat(3, 1fr);

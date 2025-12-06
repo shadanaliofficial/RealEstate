@@ -34,12 +34,11 @@ export default function Sustainability() {
               onClick={() => handleCardClick(card.id)}
             >
               <div className="card-inner">
-                {/* Front Side */}
+
                 <div className="card-front">
                   <p>{card.title}</p>
                 </div>
 
-                {/* Back Side */}
                 <div className="card-back">
                   <p>Know More</p>
                 </div>

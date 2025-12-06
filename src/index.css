@@ -1,20 +1,16 @@
-/* Reset default browser styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* Apply Montserrat globally */
   font-family: 'Montserrat', sans-serif;
 
 
 }
 
-/* Global body styles */
 html, body, #root {
   height: 100%;
 }
 
-/* Google Font import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 body {

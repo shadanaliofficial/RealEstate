@@ -27,7 +27,6 @@
   margin-right: auto;
 }
 
-/* Features Row */
 .features-row {
   display: flex;
   align-items: center;
@@ -53,21 +52,18 @@
   transform: translateY(-4px);
 }
 
-
 .feature-item p {
   font-size: 1rem;
   font-weight: 600;
   color: rgba(8, 51, 8, 0.845);
 }
 
-/* Divider line between items */
 .divider {
   width: 1px;
   height: 90px;
   background: #ccc;
 }
 
-/* Download Button */
 .features-btn-container {
   margin-top: 4rem;
 }
@@ -88,7 +84,6 @@
   transition: color 0.3s ease;
 }
 
-/* The fill effect */
 .download-btn::before {
   content: "";
   position: absolute;
@@ -96,22 +91,19 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background: rgba(8, 51, 8, 0.845); /* darker green for fill */
+  background: rgba(8, 51, 8, 0.845);
   z-index: -1;
   transition: width 0.5s ease;
 }
 
 .download-btn:hover::before {
-  width: 100%; /* fill from left to right */
+  width: 100%;
 }
 
-/* Optional slight 3D effect */
 .download-btn:active {
   transform: scale(0.98);
 }
 
-
-/* Responsive design */
 @media (max-width: 992px) {
   .features-row {
     flex-wrap: wrap;

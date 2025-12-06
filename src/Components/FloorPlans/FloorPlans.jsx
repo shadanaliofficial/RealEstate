@@ -29,7 +29,6 @@ export default function FloorPlans() {
 
   return (
     <section className="floorplans-section">
-      {/* Left Side */}
       <div className="floorplans-left">
         <h2 className="section-title">Floor Plans</h2>
 
@@ -52,7 +51,6 @@ export default function FloorPlans() {
         </div>
       </div>
 
-      {/* Right Side */}
       <div className="floorplans-right">
         <div className="image-wrapper">
           <img

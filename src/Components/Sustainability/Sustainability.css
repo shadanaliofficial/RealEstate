@@ -12,7 +12,6 @@
   margin-bottom: 3rem;
 }
 
-/* Grid layout */
 .sustainability-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -20,7 +19,6 @@
   justify-items: center;
 }
 
-/* Card container */
 .sustainability-card {
   width: 100%;
   max-width: 250px;
@@ -41,7 +39,6 @@
   transform: rotateY(180deg);
 }
 
-/* Front side */
 .card-front,
 .card-back {
   position: absolute;
@@ -61,27 +58,23 @@
   transition: all 0.3s ease;
 }
 
-/* Front face (default) */
 .card-front {
   background: #faf3e086;
-  color: #0b6623; /* dark green text */
+  color: #0b6623;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Back face (on flip) */
 .card-back {
-  background: #0b6623; /* dark green */
+  background: #0b6623;
   color: #ffffff;
   transform: rotateY(180deg);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Slight lift on hover */
 .sustainability-card:hover .card-front {
   transform: scale(1.05);
 }
 
-/* Responsive design */
 @media (max-width: 1024px) {
   .sustainability-grid {
     grid-template-columns: repeat(3, 1fr);
